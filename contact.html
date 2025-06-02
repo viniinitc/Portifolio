@@ -2,7 +2,16 @@
 <html>
     <head>
         <link rel="stylesheet" href="estilocontact.css">
+        <script src="contactjava.js"></script>
         <title>Contato</title>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+        <script type="text/javascript">
+            (function(){
+               emailjs.init({
+                 publicKey: "Am7lFSXFbrzOaMnVc",
+               });
+            })();
+         </script>
     </head>
     <body>
         <div class="topnav">
@@ -13,9 +22,10 @@
         </div>
         <h1>Formas de contato:</h1>
         <ul>
-            <li>Email : vinitcavalcantena@gmail.com</li>
+            <li>Email : <button onclick="sendEmail()">vinitcavalcantena@gmail.com</button></li>
             <li>Linkedin : <a href="https://www.linkedin.com/in/viniinitc/">linkedin.com/in/viniinitc</a></li>
             <li>Whatsapp : +55 (81) 98730-8449</li>
         </ul>
+        
     </body>
 </html>

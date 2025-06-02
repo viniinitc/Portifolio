@@ -36,3 +36,19 @@ a{
 h1{
     color: whitesmoke;
 }
+button{
+    background-color: whitesmoke ;
+    border: none;
+        color: rgb(0, 0, 0);
+        transition-duration: 0.4s ;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        border: 2px solid #00b7ff;
+        
+        cursor: pointer;
+}
+button:hover{
+    background-color: black;
+    color: white;
+}
